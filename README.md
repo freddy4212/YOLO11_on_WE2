@@ -59,6 +59,10 @@ vela --accelerator-config ethos-u55-64 --config himax_vela.ini --system-config M
 ```
 ![alt text](images/vela_report.png)
 
+- The output int8 vela tflite model which you can open by [netron](https://netron.app/).
+![alt text](images/vela_model.png)
+
+
 #### Yolo11n object detection on WE2
 - You can reference [here](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od) to put the Yolo11n object detection on WE2.
 
