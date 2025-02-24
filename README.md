@@ -70,7 +70,7 @@ vela --accelerator-config ethos-u55-64 --config himax_vela.ini --system-config M
 #### Yolo11n object detection on WE2
 - You can reference [here](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od) to put the Yolo11n object detection on WE2.
 
-[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#back-to-outline)
+[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#outline)
 
 ## Open YOLO11_on_WE2_Tutorial.ipynb on Colab
 - You cust click following button.
@@ -102,4 +102,4 @@ vela --accelerator-config ethos-u55-64 --config himax_vela.ini --system-config M
 #### Yolo11n object detection on WE2
 - You can reference [here](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od) to put the Yolo11n object detection on WE2.
 
-[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#back-to-outline)
+[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#outline)
