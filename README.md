@@ -1,8 +1,12 @@
 # YOLO11_on_WE2
 This is the repository which can generate the YOLO11 model running on WE2.
 Currently only support YOLO11 object detection task.
+## Outline
+You can choose to install it on your local PC or open it on Colab.
+- [Install the Yolo11 environment at local PC](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#install-the-yolo11-environment-at-local-pc)
+- [Open YOLO11_on_WE2_Tutorial.ipynb on Colab](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#open-yolo11_on_we2_tutorialipynb-on-colab)
 
-## Install the Yolo11 environment at local PC (Suggest)
+## Install the Yolo11 environment at local PC
 - The package has been tested in Ubuntu 20.04 LTS environment.
 #### Clone repository
 ```
@@ -66,18 +70,22 @@ vela --accelerator-config ethos-u55-64 --config himax_vela.ini --system-config M
 #### Yolo11n object detection on WE2
 - You can reference [here](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od) to put the Yolo11n object detection on WE2.
 
-## Open YOLO11_on_WE2_Tutorial.ipynb in Colab (Experimental)
-- You should make sure your python enviroment is `Python-3.10.12` at colab.
+[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#back-to-outline)
+
+## Open YOLO11_on_WE2_Tutorial.ipynb on Colab
 - You cust click following button.
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HimaxWiseEyePlus/YOLO11_on_WE2/blob/main/examples/YOLO11_on_WE2_Tutorial.ipynb)
+[![Open on Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HimaxWiseEyePlus/YOLO11_on_WE2/blob/main/examples/YOLO11_on_WE2_Tutorial.ipynb)
 
 - Just step by step execute each block
 #### Setup
 ![alt text](images/0_setup.png)
 
-#### Export YOLO11n int8 tflite with BatchMatMul Operater by pretrained weight [yolo11n.pt](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt)
+#### Export YOLO11n int8 tflite by pretrained weight [yolo11n.pt](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt)
 - You can also replace the `*.pt` file by your own file.
-![alt text](images/1_export_int8_tflite.png)
+- You can export original yolo11n int8 tflite with BatchMatMul Operater by `0.a` and skip `0.b`.
+![alt text](images/1_export_int8_tflite_a.png)
+- You can export yolo11n int8 tflite with BatchMatMul Operater without post-proccessing by `0.b` with `no_post=True`.
+![alt text](images/1_export_int8_tflite_b.png)
 
 #### Install vela compiler
 ![alt text](images/2_install_vela.png)
@@ -93,3 +101,5 @@ vela --accelerator-config ethos-u55-64 --config himax_vela.ini --system-config M
 
 #### Yolo11n object detection on WE2
 - You can reference [here](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od) to put the Yolo11n object detection on WE2.
+
+[Back to Outline](https://github.com/HimaxWiseEyePlus/YOLO11_on_WE2?tab=readme-ov-file#back-to-outline)
